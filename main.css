@@ -1,0 +1,82 @@
+body {
+	width: 100%;
+}
+
+.ekran {
+	background-color:#797474;
+	padding:5px;
+	font-family: Comic Sans MS;
+}
+
+.ekran span {
+	padding: 10px;
+	display: block;
+	margin-bottom: 2px;
+	min-height: 25px;;
+	line-height: 20px;
+	font-size: 35px;
+}
+.ekran span.passive {
+	font-size: 20px;
+}
+.ekran span#sonuc {
+	background-color: #aaa;
+}
+
+.wrapper {
+    width: auto;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: #797474;
+}
+
+.calculator {
+	display: grid;
+    grid-gap: 0;
+	font-family: Comic Sans MS;
+	
+}
+
+.calculator button {
+	padding: 20px 0;
+    border: none;
+	font-size:20px;
+}
+
+.calculator .double-row {
+    grid-column: 4;
+    grid-row: 3/ span 2;
+}
+
+.calculator .double-col {
+    background-color:#FF4500;
+    grid-row: 5;
+    grid-column: 3 / span 2;
+}
+.goruntu
+{
+	width:276px;
+	background-color:#797474;
+	
+	padding:5px;
+	font-family: Comic Sans MS;		
+	font-size:25px;
+}
+.goruntu input
+{
+	background-color:#aaa;
+	border-radius: 20px;
+	padding: 10px;
+	display: block;
+	margin-bottom: 2px;
+	min-height: 25px;;
+	line-height: 20px;
+	
+}
+.goruntu input.passive {
+	font-size: 20px;
+}
+.goruntu input#islem{
+	text-align:right; 
+}
