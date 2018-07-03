@@ -4,7 +4,7 @@ window.onload = function () {
 	var ikinciSayi = document.getElementById('ikinci-sayi');	
 	var islem = document.getElementById('islem');
 	var sonuc = document.getElementById('sonuc');
-	
+	ilkSayi.focus();
 	var buttons = document.querySelectorAll("button");
 	console.log(buttons);
 	buttons.forEach(function(el){
@@ -16,7 +16,7 @@ window.onload = function () {
 			
 			if(btnValue >= 0 || btnValue <= 9) {
 				updateScreen(btnValue);
-			} else if(btnValue == '+' || btnValue == '-' || btnValue == '*' || btnValue == '/'){
+			} else if(btnValue == '+' || btnValue == '-' || btnValue == '*' || btnValue == '/' ){
 				updateScreenProcess(btnValue);
 			} else {
 				switch(btnValue) {
@@ -61,6 +61,8 @@ window.onload = function () {
 		ikinciSayi.value=" ";
 		islem.value='';
 	    sonuc.innerHTML=" ";
+		ilkSayi.classList.add('ress');
+		ikinciSayi.classList.add('ress');
 		ilkSayi.focus();
 	}  
 	

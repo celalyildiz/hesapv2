@@ -1,46 +1,49 @@
 body {
+    
 	width: 100%;
 }
 
 .ekran {
-	background-color:#797474;
-	padding:5px;
+	
 	font-family: Comic Sans MS;
 }
-
 .ekran span {
 	padding: 10px;
 	display: block;
 	margin-bottom: 2px;
-	min-height: 25px;;
+	min-height: 26px;
 	line-height: 20px;
+	width: 269px;
 	font-size: 35px;
-}
-.ekran span.passive {
-	font-size: 20px;
+	border:  none;
+	border-radius: 0;
 }
 .ekran span#sonuc {
 	background-color: #aaa;
 }
-
 .wrapper {
     width: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    background-color:black;
+    border-radius: 10px;
     max-width: 300px;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: #797474;
+    background: #000;
 }
+
 
 .calculator {
 	display: grid;
-    grid-gap: 0;
 	font-family: Comic Sans MS;
-	
+	grid-template-columns: 72px 72px 72px 73px;
 }
 
 .calculator button {
-	padding: 20px 0;
-    border: none;
+	background-color:white;
+	padding: 15px 0;
+	border: 0.1px solid #9e9a9a;
 	font-size:20px;
 }
 
@@ -56,12 +59,10 @@ body {
 }
 .goruntu
 {
-	width:276px;
-	background-color:#797474;
-	
-	padding:5px;
-	font-family: Comic Sans MS;		
-	font-size:25px;
+	width: 289px;
+	font-family: Comic Sans MS;
+	font-size:35px;
+	border: none;
 }
 .goruntu input
 {
@@ -74,7 +75,10 @@ body {
 	line-height: 20px;
 	
 }
-.goruntu input.passive {
+.ress{
+	font-size:35px;
+}
+.passive {
 	font-size: 20px;
 }
 .goruntu input#islem{
