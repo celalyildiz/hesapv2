@@ -1,5 +1,5 @@
 window.onload = function () {
-    
+   
 	var ilkSayi = document.getElementById('ilk-sayi');
 	var ikinciSayi = document.getElementById('ikinci-sayi');	
 	var islem = document.getElementById('islem');
@@ -7,6 +7,7 @@ window.onload = function () {
 	ilkSayi.focus();
 	var buttons = document.querySelectorAll("button");
 	console.log(buttons);
+	
 	buttons.forEach(function(el){
 		
 		el.addEventListener("click", function(){
@@ -95,5 +96,32 @@ window.onload = function () {
 	function closeScreen() {
 		window.close();
 	}
+    genel.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    switch (event.keyCode) 
+	{
+   
+    case 106:
+	document.getElementById("carp").click();
+	ikinciSayi.focus();
+	break;
+	case 107:
+	document.getElementById("topla").click();
+	ikinciSayi.focus();
+	break;
+	case 111:
+	document.getElementById("bol").click();
+	ikinciSayi.focus();
+	break;
+	case 109:
+	document.getElementById("cikar").click();
+	ikinciSayi.focus();
+	break;
+	case 13:
+        document.getElementById("esit").click();
+	break;
+    }
+
+    });
 })
 }

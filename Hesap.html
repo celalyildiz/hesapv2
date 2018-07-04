@@ -11,17 +11,17 @@
 
 <body>
 	<div name=hesapla class="wrapper">
-		<div class="ekran">
-		  <input type="text" class="goruntu" id="ilk-sayi" onfocus="this.focus()"></input><br>
+		<div id="genel" class="ekran">
+		  <input type="number" class="goruntu" id="ilk-sayi" onfocus="this.focus()"></input><br>
 		  <input type="text" class="goruntu" id="islem"></input>
 		  <input type="text" class="goruntu" id="ikinci-sayi"></input>
 		  <span class="ekran" id="sonuc"></span>
 		 </div>
 		<div id="tus" name=wrapper class="calculator">
-		  <button type="button" value="+" >+</button>
-		  <button type="button" value="-" >-</button>
-		  <button type="button" value="*" >x</button>
-		  <button type="button" value="/" >/</button>
+		  <button type="button" id="topla" value="+" >+</button>
+		  <button type="button" id="cikar" value="-" >-</button>
+		  <button type="button" id="carp" value="*" >x</button>
+		  <button type="button" id="bol" value="/" >/</button>
 		  <button type="button" value="1" >1</button>
 		  <button type="button" value="2" >2</button>
 		  <button type="button" value="3" >3</button>
@@ -35,7 +35,7 @@
 		  <button type="button" value="9" >9</button>
 		  <button type="button" value="close">on/off</button>
 		  <button type="button" value="0" >0</button>
-		  <button type="button" value="=" class="double-col">=</button>
+		  <button type="button" id="esit" value="=" class="double-col">=</button>
 		  </div>
 		</div>
 	
