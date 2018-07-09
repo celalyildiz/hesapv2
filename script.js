@@ -38,8 +38,6 @@ window.onload = function () {
 			}			
 		}
 	});
-	
-	
 	function updateScreen(sayi) {
 		
 		if(islem.value == '' || islem.value == null) {
@@ -96,25 +94,24 @@ window.onload = function () {
 	function closeScreen() {
 		window.close();
 	}
-    genel.addEventListener("keyup", function(event) {
-    event.preventDefault();
+    genel.addEventListener("keypress", function(event) {
+	console.log(event.keyCode);
     switch (event.keyCode) 
 	{
-   
-    case 106:
-	document.getElementById("carp").click();
-	ikinciSayi.focus();
-	break;
-	case 107:
+	case 43:
 	document.getElementById("topla").click();
 	ikinciSayi.focus();
 	break;
-	case 111:
-	document.getElementById("bol").click();
+	case 45:
+	document.getElementById("cikar").click();
 	ikinciSayi.focus();
 	break;
-	case 109:
-	document.getElementById("cikar").click();
+	case 42:
+	document.getElementById("carp").click();
+	ikinciSayi.focus();
+	break;
+	case 47:
+	document.getElementById("bol").click();
 	ikinciSayi.focus();
 	break;
 	case 13:
